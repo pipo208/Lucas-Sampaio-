@@ -2,111 +2,134 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css" />
 
-    <title>Nosso Site</title>
+  <title>Nosso Site</title>
+
+  <style>
+    /* Animação deslizar e girar */
+    @keyframes deslizarEGirar {
+      0% {
+        transform: translateX(0) rotate(0deg)
+      }
+      50% {
+        transform: translateX(26px) rotate(0deg);
+      }
+      100% {
+        transform: translateX(26px) rotate(360deg);
+      }
+    }
+
+    /* Aplica a animação somente na imagem dentro de #quemsou .quem */
+    #quemsou .quem img {
+      animation: deslizarEGirar 4s ease-in-out infinite;
+      display: block;
+      margin: 50px auto; /* centraliza horizontalmente */
+      width: 150px; /* ajuste o tamanho da imagem, se desejar */
+    }
+  </style>
 </head>
 
 <body>
-    <header><!-- início do header -->
-
-        <div id="topo">
-            <div id="marca">
-                <img src="img/logo.png" alt="Nosso Site" title="Nosso Site">
-                <h1>Nosso Site</h1>
-            </div>
-            <div id="menu">
-                <div id="redes">
-                    <ul>
-                        <li><a href="#"><img src="img/insta.png" alt="instagram" target="_blank"></a></li>
-                        <li><a href="#"><img src="img/face.png" alt="facebook" target="_blank"></a></li>
-                        <li><a href="#"><img src="img/you.png" alt="youtube" target="_blank"></a></li>
-                    </ul>
-                </div>
-
-                <nav>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#sobre">Sobre</a></li>
-                        <li><a href="#contato">Contato</a></li>
-                    </ul>
-                </nav>
-            </div>
+  <header>
+    <div id="topo">
+      <div id="marca">
+        <img src="img/logo.png" alt="Nosso Site" title="Nosso Site" />
+        <h1>Nosso Site</h1>
+      </div>
+      <div id="menu">
+        <div id="redes">
+          <ul>
+            <li><a href="#"><img src="img/insta.png" alt="instagram" target="_blank" /></a></li>
+            <li><a href="#"><img src="img/face.png" alt="facebook" target="_blank" /></a></li>
+            <li><a href="#"><img src="img/you.png" alt="youtube" target="_blank" /></a></li>
+          </ul>
         </div>
-    </header><!-- fim do header -->
 
-    <section id="home"><!-- início do banner -->
-        <div id="banner" class="parallax">
-            <h2>Curso Técnico de Informática para Internet</h2>
-            <h4>Etec de Heliópolis</h4>
-        </div>
-    </section><!-- fim do banner -->
-
-    <!-- <div id="divisor">
-
-    </div> -->
-
-    <section id="sobre">
-        <div class="card">
-            <img src="img/clock.svg" alt=""> <!-- https://www.svgrepo.com/ -->
-            <h3>Carga Horária</h3>
-            <h4>3000 h</h4>
-        </div>
-        <div class="card">
-            <img src="img/calendar.svg" alt="">
-            <h3>Duração</h3>
-            <h4>3 anos</h4>
-        </div>
-        <div class="card">
-            <img src="img/calendar.svg" alt="">
-            <h3>Tipo de curso</h3>
-            <h4>Ensino Médio integrado ao técnico (M-Tec)</h4>
-        </div>
-        <div class="card">
-            ><img src="img/calendar.svg" alt="">
-            <h3>Eixo tecnológico</h3>
-            <h4>Informação e Comunicação</h4>
-        </div>
-            <div class="card">
-            <img src="img/riley.com.brinco.jfif" alt="">
-            <h3>Lucas Sampaio</h3>
-            <h4>Técnico de TI</h4>
-
-    </section>
- <section id="quemsou">
-        <div class="quem">
-            <img src="img/logo.png" alt="Nosso Site" title="Nosso Site">
-        </div>
-        <div id="dados">
-            <h2>Prof. Ricardo</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti blanditiis, veritatis neque tempora in
-                architecto, laborum cupiditate, nisi optio accusamus dignissimos. Maiores adipisci deleniti officiis
-                consectetur sunt dolorum impedit! Et!</p>
-        </div>
-    </section>
-
-    <section id="aulas">
-        <div class="iw1">
-            <h2>Interfaces WEB I</h2>
-            <img src="img/aspas.svg" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis saepe natus similique illum dolor amet aut. Esse molestiae alias ea, doloremque quasi iure libero hic sint officiis deleniti? Dicta, labore!</p>
-        </div>
-    </section>
-
-    <div id="divisor">
-
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
+  </header>
 
-        <section id="botao">
-        <a href="#home">
-            <svg width="64px" height="32px" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 8L2 8L2 6L8 5.24536e-07L14 6L14 8L10 8L10 16L6 16L6 8Z" fill="#0149ff"></path> </g></svg>
-        </a>
+  <section id="home">
+    <div id="banner" class="parallax">
+      <h2>Curso Técnico de Informática para Internet</h2>
+      <h4>Etec de Heliópolis</h4>
+    </div>
+  </section>
 
-        </section>
-        
+  <section id="sobre">
+    <div class="card">
+      <img src="img/clock.svg" alt="" />
+      <h3>Carga Horária</h3>
+      <h4>3000 h</h4>
+    </div>
+    <div class="card">
+      <img src="img/calendar.svg" alt="" />
+      <h3>Duração</h3>
+      <h4>3 anos</h4>
+    </div>
+    <div class="card">
+      <img src="img/tools.svg" alt="" />
+      <h3>Tipo de curso</h3>
+      <h4>Ensino Médio integrado ao técnico (M-Tec)</h4>
+    </div>
+    <div class="card">
+      <img src="img/calendar.svg" alt="" />
+      <h3>Eixo tecnológico</h3>
+      <h4>Informação e Comunicação</h4>
+    </div>
+  </section>
+
+  <section id="quemsou">
+    <div class="quem">
+      <img src="img/logo.png" alt="Nosso Site" title="Nosso Site" />
+    </div>
+    <div id="dados">
+      <h2>Prof. Ricardo</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti blanditiis,
+        veritatis neque tempora in architecto, laborum cupiditate, nisi optio accusamus
+        dignissimos. Maiores adipisci deleniti officiis consectetur sunt dolorum impedit! Et!
+      </p>
+    </div>
+  </section>
+
+  <section id="aulas">
+    <div class="iw1">
+      <h2>Interfaces WEB I</h2>
+      <img src="img/aspas.svg" alt="" />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis saepe
+        natus similique illum dolor amet aut. Esse molestiae alias ea, doloremque quasi
+        iure libero hic sint officiis deleniti? Dicta, labore!
+      </p>
+    </div>
+  </section>
+
+  <div id="divisor"></div>
+
+  <section id="botao">
+    <a href="#home">
+      <svg
+        width="64px"
+        height="32px"
+        viewBox="0 0 16 16"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M6 8L2 8L2 6L8 0L14 6L14 8L10 8L10 16L6 16L6 8Z" fill="#0149ff" />
+      </svg>
+    </a>
+  </section>
 </body>
-
 </html>
