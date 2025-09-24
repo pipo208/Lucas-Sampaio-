@@ -322,6 +322,92 @@ nav ul li a:hover {
 #divisor {
     height: 100px;
 }
+#formulario {
+    margin-top: -150px;
+    background-color: #ffffff;
+    padding: 100px 0;
+    font-size: 24px;
+}
 
-  
+#formulario h1 {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(0, 140, 255);
+    text-align: center;
+}
 
+form {
+    margin: 0 auto;
+    padding: 20px;
+    width: 50%;
+}
+
+fieldset {
+    background-color: #eeeeee;
+    border: 1px solid #777;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+legend {
+    background-color: gray;
+    color: white;
+    padding: 5px 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    margin: 5px;
+    border: 1px solid #777;
+    font-size: 24px;
+}
+
+textarea,
+select {
+    border: 1px solid #777;
+    font-size: 24px;
+}
+
+input[type=submit] {
+    padding: 10px 15px;
+    background-color: green;
+    border-radius: 10px;
+    border: 0px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+input[type=reset] {
+    padding: 10px 15px;
+    background-color: cyan;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid blue;
+}
+/* localização */
+#localizacao {
+    background-color: #555;
+    padding: 50px 250px;
+    font-size: 24px;
+}
+
+#localizacao iframe {
+    width: 400px;
+    height: 200px;
+    float: left;
+    margin-right: 50px;
+}
+
+#local h3 {
+    text-align: left;
+}
+
+#local p {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
