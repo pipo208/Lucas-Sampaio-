@@ -2,135 +2,185 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css">
 
-  <title>Nosso Site</title>
-
-  <style>
-    /* Animação deslizar e girar */
-    @keyframes deslizarEGirar {
-      0% {
-        transform: translateX(0) rotate(0deg)
-      }
-      50% {
-        transform: translateX(26px) rotate(0deg);
-      }
-      100% {
-        transform: translateX(26px) rotate(360deg);
-      }
-    }
-
-    /* Aplica a animação somente na imagem dentro de #quemsou .quem */
-    #quemsou .quem img {
-      animation: deslizarEGirar 4s ease-in-out infinite;
-      display: block;
-      margin: 50px auto; /* centraliza horizontalmente */
-      width: 150px; /* ajuste o tamanho da imagem, se desejar */
-    }
-  </style>
+    <title>Nosso Site</title>
 </head>
 
 <body>
-  <header>
-    <div id="topo">
-      <div id="marca">
-        <img src="img/logo.png" alt="Nosso Site" title="Nosso Site" />
-        <h1>Nosso Site</h1>
-      </div>
-      <div id="menu">
-        <div id="redes">
-          <ul>
-            <li><a href="#"><img src="img/insta.png" alt="instagram" target="_blank" /></a></li>
-            <li><a href="#"><img src="img/face.png" alt="facebook" target="_blank" /></a></li>
-            <li><a href="#"><img src="img/you.png" alt="youtube" target="_blank" /></a></li>
-          </ul>
+    <header><!-- início do header -->
+        <div id="topo">
+            <div id="marca">
+                <img src="img/logo.png" alt="Nosso Site" title="Nosso Site">
+                <h1>Nosso Site</h1>
+            </div>
+            <div id="menu">
+                <div id="redes">
+                    <ul>
+                        <li><a href="#"><img src="img/insta.png" alt="instagram" target="_blank"></a></li>
+                        <li><a href="#"><img src="img/face.png" alt="facebook" target="_blank"></a></li>
+                        <li><a href="#"><img src="img/you.png" alt="youtube" target="_blank"></a></li>
+                    </ul>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header><!-- fim do header -->
+
+    <section id="home"><!-- início do banner -->
+        <div id="banner" class="parallax">
+            <h2>Curso Técnico de Informática para Internet</h2>
+            <h4>Etec de Heliópolis</h4>
+        </div>
+    </section><!-- fim do banner -->
+
+    <!-- <div id="divisor">
+
+    </div> -->
+
+    <section id="sobre">
+        <div class="card">
+            <img src="img/clock.svg" alt=""> <!-- https://www.svgrepo.com/ -->
+            <h3>Carga Horária</h3>
+            <h4>3000 h</h4>
+        </div>
+        <div class="card">
+            <img src="img/calendar.svg" alt="">
+            <h3>Duração</h3>
+            <h4>3 anos</h4>
+        </div>
+        <div class="card">
+            <img src="img/tools.svg" alt="">
+            <h3>Tipo de curso</h3>
+            <h4>Ensino Médio integrado ao técnico (M-Tec)</h4>
+        </div>
+        <div class="card">
+            <img src="img/calendar.svg" alt="">
+            <h3>Eixo tecnológico</h3>
+            <h4>Informação e Comunicação</h4>
         </div>
 
-        <nav>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#contato">Contato</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </header>
+    </section>
 
-  <section id="home">
-    <div id="banner" class="parallax">
-      <h2>Curso Técnico de Informática para Internet</h2>
-      <h4>Etec de Heliópolis</h4>
-    </div>
-  </section>
+    <section id="quemsou">
+        <div class="quem">
+            <img src="img/logo.png" alt="Nosso Site" title="Nosso Site">
+        </div>
+        <div id="dados">
+            <h2>Prof. Ricardo</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti blanditiis, veritatis neque tempora in
+                architecto, laborum cupiditate, nisi optio accusamus dignissimos. Maiores adipisci deleniti officiis
+                consectetur sunt dolorum impedit! Et!</p>
+        </div>
+    </section>
 
-  <section id="sobre">
-    <div class="card">
-      <img src="img/clock.svg" alt="" />
-      <h3>Carga Horária</h3>
-      <h4>3000 h</h4>
-    </div>
-    <div class="card">
-      <img src="img/calendar.svg" alt="" />
-      <h3>Duração</h3>
-      <h4>3 anos</h4>
-    </div>
-    <div class="card">
-      <img src="img/tools.svg" alt="" />
-      <h3>Tipo de curso</h3>
-      <h4>Ensino Médio integrado ao técnico (M-Tec)</h4>
-    </div>
-    <div class="card">
-      <img src="img/calendar.svg" alt="" />
-      <h3>Eixo tecnológico</h3>
-      <h4>Informação e Comunicação</h4>
-    </div>
-  </section>
+    <section id="aulas">
+        <div class="iw1">
+            <h2>Interfaces WEB I</h2>
+            <img src="img/aspas.svg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis saepe natus similique illum dolor amet aut. Esse molestiae alias ea, doloremque quasi iure libero hic sint officiis deleniti? Dicta, labore!</p>
+        </div>
+    </section>
 
-  <section id="quemsou">
-    <div class="quem">
-      <img src="img/logo.png" alt="Nosso Site" title="Nosso Site" />
-    </div>
-    <div id="dados">
-      <h2>Prof. Ricardo</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti blanditiis,
-        veritatis neque tempora in architecto, laborum cupiditate, nisi optio accusamus
-        dignissimos. Maiores adipisci deleniti officiis consectetur sunt dolorum impedit! Et!
-      </p>
-    </div>
-  </section>
+    <div id="divisor">
 
-  <section id="aulas">
-    <div class="iw1">
-      <h2>Interfaces WEB I</h2>
-      <img src="img/aspas.svg" alt="" />
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis saepe
-        natus similique illum dolor amet aut. Esse molestiae alias ea, doloremque quasi
-        iure libero hic sint officiis deleniti? Dicta, labore!
-      </p>
     </div>
-  </section>
 
-  <div id="divisor"></div>
+        <section id="botao">
+        <a href="#home">
+            <svg width="64px" height="32px" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 8L2 8L2 6L8 5.24536e-07L14 6L14 8L10 8L10 16L6 16L6 8Z" fill="#0149ff"></path> </g></svg>
+        </a>
 
-  <section id="botao">
-    <a href="#home">
-      <svg
-        width="64px"
-        height="32px"
-        viewBox="0 0 16 16"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path d="M6 8L2 8L2 6L8 0L14 6L14 8L10 8L10 16L6 16L6 8Z" fill="#0149ff" />
-      </svg>
-    </a>
-  </section>
+        </section>
+        
 </body>
-</html>
+<body>
 
+
+        <main>
+            <section id="formulario">
+
+                <h1>Fale Conosco</h1>
+                <form action="#contato" method="get">
+                    <fieldset>
+                        <legend>Dados Pessoais</legend>
+                        <label>Nome:</label>
+                        <input type="text" name="nome" id="" maxlength="500" placeholder="Seu nome" autofocus>
+                        <br>
+                        <label>E-mail:</label>
+                        <input type="email" name="email" id="" required>
+                        <br>
+                    </fieldset>
+                    <br>
+                    <label>Status:</label><br>
+                    <input type="radio" name="status" id="" value="1">Usuário
+                    <input type="radio" name="status" id="" value="2">Fornecedor
+                    <input type="radio" name="status" id="" value="3">Visitante
+                    <br><br>
+                    <label>Como chegou até nós?</label><br>
+                    <input type="checkbox" name="modo1" id="" value="1">Indicação de amigo<br>
+                    <input type="checkbox" name="modo2" id="" value="2">Site de busca<br>
+                    <input type="checkbox" name="modo3" id="" value="3">Folheto de divulgação
+                    <br><br>
+                    <label>Qual a sua altura:</label>
+                    <input type="number" name="altura" step="0.5" min="0" id="" max="2.5">
+                    <br><br>
+                    <label>Qual sua data de nascimento:</label>
+                    <input type="date" name="nas" id="">
+                    <br><br>
+                    <label>Qual o seu estado:<span class="uf">somente a sigla</span></label>
+                    <input type="text" name="uf" id="uf" pattern="[A-Za-z]{2}" maxlength="2" size="2">
+                    <br>
+                    <br>
+                    <label>Senha:</label>
+                    <input type="password" name="senha" id="">
+                    <br>
+                    <br>
+                    <label>Idioma:</label>
+                    <select name="idioma" id="">
+                        <option value="pt">Português</option>
+                        <option value="en">Inglês</option>
+                        <option value="ou">Outro</option>
+                    </select>
+                    <p style="margin-top: 20px;">
+                        <label>Comentário/Sugestão:</label>
+                    </p>
+                    <textarea name="comment" id="" cols="50" rows="3"></textarea>
+                    <br><br>
+                    <input type="submit" value="ENVIAR">
+                    <input type="reset" value="LIMPAR">
+                </form>
+
+            </section>
+
+            <section id="localizacao">
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1827.7455265554154!2d-46.59276866117944!3d-23.62257903723478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5c9dcb25bf6b%3A0xd37d9129d7f88db2!2sEstr.%20das%20L%C3%A1grimas%2C%202461%20-%20Ipiranga%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004244-000!5e0!3m2!1spt-BR!2sbr!4v1748124040214!5m2!1spt-BR!2sbr"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                <div id="local">
+                    <h3>Etec de Heliópolis</h3>
+                    <p>Estrada das Lágrimas, 2461<br>
+                    Sacomã - São Paulo-SP - CEP: 04244-000</p>
+                    <p><img src="img/phone.png" alt="">  (11) 2083-2727</p>
+                </div>
+            </section>
+        </main>
+<footer>
+        <p>Desenvolvido por: <span class="negrito">InfoWeb&copy;</span> 2025</p>
+    </footer>
+</body>
+
+</html>
