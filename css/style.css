@@ -10,18 +10,18 @@ html {
 }
 
 body {
-    background-color: #cdf2f7;
+    background-color: #1e2a2f; /* cinza-azulado escuro */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #e0e6eb; /* texto claro */
 }
 
 /* header */
 header {
     width: 100%;
     height: 250px;
-    background-color: #73c4d2;
+    background-color: #2b3a40; /* azul grafite */
     position: fixed;
     z-index: 100;
-    /* Garante que o cabeçalho fique sobre outros elementos */
 }
 
 #topo {
@@ -41,7 +41,7 @@ header {
 }
 
 #marca h1 {
-    color: #fff;
+    color: #e0e6eb;
     position: relative;
     top: -120px;
     left: 175px;
@@ -55,7 +55,6 @@ header {
     right: 0;
     flex-wrap: wrap;
     justify-content: flex-end;
-    /* background-color: #ccc; */
     width: 200px;
 }
 
@@ -67,6 +66,7 @@ header {
 #redes img {
     width: 50px;
     height: 50px;
+    filter: brightness(0.85);
 }
 
 #redes a {
@@ -85,7 +85,6 @@ header {
 /* links */
 nav {
     position: relative;
-    /* top: 20px; */
 }
 
 nav a {
@@ -106,14 +105,14 @@ nav ul li {
 
 nav ul li a {
     padding: 5px 10px;
-    color: white;
-    background-color: #0149ff;
-    transition: color 0.5s;
+    color: #e0e6eb;
+    background-color: #37566b;
+    transition: all 0.5s;
 }
 
 nav ul li a:hover {
-    color: #0149ff;
-    background-color: white;
+    color: #37566b;
+    background-color: #e0e6eb;
 }
 
 /* banner */
@@ -124,51 +123,38 @@ nav ul li a:hover {
     height: 650px;
     margin-bottom: 250px;
 
-    /* Estilização para o texto dentro da div */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: #243136; /* fallback */
 }
 
 .parallax {
-    /* camada */
     z-index: 5;
-
-    /* cor de fundo com transparência */
-    background-color: rgba(0, 0, 0, .5);
-
-    /* A imagem de fundo */
+    background-color: rgba(20, 30, 35, 0.6);
     background-image: url("../img/banner.jpg");
-
-    /* O efeito parallax! */
     background-attachment: fixed;
-
-    /* Garante que a imagem cubra toda a div */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     background-blend-mode: overlay;
-
-
 }
 
 #banner h2 {
-    /* color: #73c4d2; */
-    color: #fff;
+    color: #e0e6eb;
     text-shadow: #000 5px 5px 10px;
     font-size: 3em;
 }
 
 #banner h4 {
-    /* color: #fff; */
-    color: #73c4d2;
+    color: #7dc0d6;
     font-size: 1.75em;
 }
 
 /* sobre */
 #sobre {
-    background-color: #eee;
+    background-color: #2b3a40;
     position: relative;
     display: flex;
     justify-content: center;
@@ -178,13 +164,14 @@ nav ul li a:hover {
 }
 
 .card {
-    background: white;
+    background: #32444b;
     border-radius: 25px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
     padding: 30px;
     width: 300px;
     transition: box-shadow 0.5s ease;
     text-align: center;
+    color: #e0e6eb;
 }
 
 #sobre img {
@@ -193,17 +180,17 @@ nav ul li a:hover {
 
 #sobre h3 {
     margin: 20px 0 10px 0;
-    color: #73c4d2;
+    color: #7dc0d6;
 }
 
 #sobre h4 {
-    color: #999;
+    color: #b0b8bd;
     font-size: 20px;
 }
 
 /* quemsou */
 #quemsou {
-    background-color: #cdf2f7;
+    background-color: #243136;
     position: relative;
     display: flex;
     flex-direction: row;
@@ -261,12 +248,12 @@ nav ul li a:hover {
 
 #quemsou h2 {
     font-size: 30px;
-    color: #0149ff;
+    color: #7dc0d6;
 }
 
 #quemsou p {
     font-size: 20px;
-    color: #999;
+    color: #b0b8bd;
 }
 
 /* aulas */
@@ -279,12 +266,13 @@ nav ul li a:hover {
     background-size: cover;
     background-position: center bottom;
     padding: 150px 0;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-} 
+    background-color: #1e2a2f;
+}
 
 .iw1 {
     position: relative;
@@ -299,41 +287,43 @@ nav ul li a:hover {
 
 #aulas h2 {
     font-size: 4em;
-    color: #0149ff;
+    color: #7dc0d6;
     margin-bottom: 30px;
 }
 
 #aulas p {
     font-size: 2em;
-    color: #fff;
+    color: #e0e6eb;
 }
 
 /* botão topo */
 #botao {
     width: 60px;
-    position: fixed; 
-  right: 20px;          
-  bottom: 20px;         
-  
-  background: lightblue;
-  padding: 10px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background: #37566b;
+    padding: 10px;
 }
 
 #divisor {
     height: 100px;
 }
+
+/* formulário */
 #formulario {
     margin-top: -150px;
-    background-color: #ffffff;
+    background-color: #2b3a40;
     padding: 100px 0;
     font-size: 24px;
+    color: #e0e6eb;
 }
 
 #formulario h1 {
     font-family: "Pacifico", cursive;
     font-weight: 400;
     font-style: normal;
-    color: rgb(0, 140, 255);
+    color: #7dc0d6;
     text-align: center;
 }
 
@@ -344,15 +334,15 @@ form {
 }
 
 fieldset {
-    background-color: #eeeeee;
-    border: 1px solid #777;
+    background-color: #32444b;
+    border: 1px solid #555;
     padding: 25px;
     border-radius: 20px;
 }
 
 legend {
-    background-color: gray;
-    color: white;
+    background-color: #37566b;
+    color: #e0e6eb;
     padding: 5px 10px;
 }
 
@@ -362,19 +352,23 @@ label {
 
 input {
     margin: 5px;
-    border: 1px solid #777;
+    border: 1px solid #555;
     font-size: 24px;
+    background-color: #1e2a2f;
+    color: #e0e6eb;
 }
 
 textarea,
 select {
-    border: 1px solid #777;
+    border: 1px solid #555;
     font-size: 24px;
+    background-color: #1e2a2f;
+    color: #e0e6eb;
 }
 
 input[type=submit] {
     padding: 10px 15px;
-    background-color: green;
+    background-color: #4caf50;
     border-radius: 10px;
     border: 0px;
     font-weight: bold;
@@ -383,16 +377,18 @@ input[type=submit] {
 
 input[type=reset] {
     padding: 10px 15px;
-    background-color: cyan;
+    background-color: #7dc0d6;
     border-radius: 25px;
     font-weight: bold;
-    border: 2px solid blue;
+    border: 2px solid #37566b;
 }
+
 /* localização */
 #localizacao {
-    background-color: #555;
+    background-color: #243136;
     padding: 50px 250px;
     font-size: 24px;
+    color: #e0e6eb;
 }
 
 #localizacao iframe {
@@ -400,6 +396,7 @@ input[type=reset] {
     height: 200px;
     float: left;
     margin-right: 50px;
+    border: 2px solid #37566b;
 }
 
 #local h3 {
